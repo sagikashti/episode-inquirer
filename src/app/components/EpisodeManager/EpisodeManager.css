@@ -10,10 +10,6 @@
   width: 100vw;
   /* Define three rows for the grid */
   grid-template-rows: 100px fit-content(70px) 1fr;
-
-  /* Add padding on the right and left */
-  padding-right: 7%;
-  padding-left: 7%;
 }
 
 /* 
