@@ -74,7 +74,7 @@ export const useFetch = (props: UrlProps) => {
             clearTimeout(timer);
             setIsLoading(false);
         };
-    }, [url]); // This effect will re-run only if the 'url' prop changes
+    }, [props.url]); // This effect will re-run only if the 'url' prop changes
 
     // Return the fetched data, loading state, and error as an array
     return [fetchedData, isLoading, error];

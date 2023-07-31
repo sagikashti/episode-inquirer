@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from "react";
 
 /**
@@ -38,7 +39,7 @@ const useLocalStorage = (key: string) => {
     // Effect hook to retrieve the stored value from local storage on initial render
     useEffect(() => {
         setValue(formatValue(localStorage.getItem(key)));
-    }, []);
+    }, [key]);
 
     // Return the stored value and the function to set the value as a tuple
     return [value, handleSetValue];

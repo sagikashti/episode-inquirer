@@ -1,3 +1,4 @@
+"use client"
 import { Episode } from "../components/Episode/Episode";
 
 /**

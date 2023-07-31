@@ -1,4 +1,4 @@
-
+"use client"
 import { usePathname, useSearchParams } from 'next/navigation'
 /**
  * Custom hook to extract route data from the current URL pathname and search parameters.
