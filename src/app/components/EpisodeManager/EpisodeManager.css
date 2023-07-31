@@ -7,13 +7,13 @@
 .em-container {
   /* Use CSS Grid for layout */
   display: grid;
-
+  width: 100vw;
   /* Define three rows for the grid */
   grid-template-rows: 100px fit-content(70px) 1fr;
 
   /* Add padding on the right and left */
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 7%;
+  padding-left: 7%;
 }
 
 /* 
@@ -71,9 +71,8 @@ input:focus {
 */
 .search {
   /* Display the element as an inline-block */
-  position: relative;
   display: inline-block;
-
+  margin-right: 26px;
   /* Add a border with a light gray color */
   border: 1px solid #b4b4b4;
 }

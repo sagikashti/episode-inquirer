@@ -80,6 +80,7 @@ export const EpisodeManager = () => {
                     <input
                         type="text"
                         value={search}
+                        size={5}
                         onChange={(e) => handleSearch(e.target.value)}
                         className={pathName === '/search' ? "" : styles.disabled}
                     />
