@@ -1,0 +1,132 @@
+/* 
+  .em-container Documentation:
+  - The .em-container class represents a container element using CSS Grid for layout.
+  - It has three rows with different heights: 100px, fit-content(70px), and 1fr (flexible height).
+  - The container has padding on the right and left set to 5%.
+*/
+.em-container {
+  /* Use CSS Grid for layout */
+  display: grid;
+
+  /* Define three rows for the grid */
+  grid-template-rows: 100px fit-content(70px) 1fr;
+
+  /* Add padding on the right and left */
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* 
+  .em-search Documentation:
+  - The .em-search class represents a search bar container element.
+  - It uses Flexbox to horizontally align its children elements and create space between them.
+*/
+.em-search {
+  /* Use Flexbox for layout */
+  display: flex;
+
+  /* Horizontally align children elements */
+  justify-content: space-between;
+
+  /* Vertically align children elements in the center */
+  align-items: center;
+}
+
+/* 
+  input Documentation:
+  - The 'input' element represents an input field within the .em-search container.
+  - It has no border, giving it a borderless appearance.
+*/
+input {
+  /* Remove the default border for the input field */
+  border: 0;
+}
+
+/* 
+  input:disabled Documentation:
+  - The 'input' element when it is disabled (not editable).
+  - It has a border with a light gray color (#b4b4b4) to indicate that it is disabled.
+*/
+input:disabled {
+  /* Add a border with a light gray color to indicate the disabled state */
+  border: 1px solid #b4b4b4;
+}
+
+/* 
+  textarea:focus, input:focus Documentation:
+  - The 'textarea' and 'input' elements when they are focused (active).
+  - They have their default outline removed when they receive focus.
+*/
+textarea:focus,
+input:focus {
+  /* Remove the default outline when the input field is focused */
+  outline: none;
+}
+
+/* 
+  .search Documentation:
+  - The .search class represents a search-related element with a border.
+  - It is displayed inline-block and has a border with a light gray color (#b4b4b4).
+  - The element is used to enclose search-related components.
+*/
+.search {
+  /* Display the element as an inline-block */
+  position: relative;
+  display: inline-block;
+
+  /* Add a border with a light gray color */
+  border: 1px solid #b4b4b4;
+}
+
+/* 
+  #clear-button Documentation:
+  - The element with the ID 'clear-button'.
+  - It has no border, removing the default appearance.
+  - It is used for a clear button in the search area.
+*/
+#clear-button {
+  /* Remove the default border for the element */
+  border: 0;
+}
+
+/* 
+  .topnav a Documentation:
+  - The .topnav class represents a navigation bar.
+  - The 'a' elements within the navigation bar are styled as links.
+  - They have a color of #2c3e50, font size of 18px, font weight of 500 (medium), and margin on the left.
+  - The text-decoration is removed from the links.
+*/
+.topnav a {
+  /* Set the color for the links */
+  color: #2c3e50;
+
+  /* Set the font size and weight for the links */
+  font-size: 18px;
+  font-weight: 500;
+
+  /* Add margin on the left to create space between links */
+  margin-left: 20px;
+
+  /* Remove the underline from the links */
+  text-decoration: none;
+}
+
+/* 
+  .topnav a:hover Documentation:
+  - The .topnav class links when they are hovered.
+  - They have a border-bottom with a color of #2c3e50 to indicate the hover state.
+*/
+.topnav a:hover {
+  /* Add a bottom border with a color of #2c3e50 on hover */
+  border-bottom: 3px solid #2c3e50;
+}
+
+/* 
+  .topnav a.active Documentation:
+  - The .topnav class link when it is active or selected.
+  - It has a border-bottom with a color of #2c3e50 to indicate the active state.
+*/
+.topnav a.active {
+  /* Add a bottom border with a color of #2c3e50 to indicate the active state */
+  border-bottom: 3px solid #2c3e50;
+}

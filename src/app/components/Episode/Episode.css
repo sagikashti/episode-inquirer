@@ -1,0 +1,64 @@
+/* 
+  Episode Container Documentation:
+  - The .episode-container class represents a container for an episode element.
+  - It uses CSS Grid to structure its content with three columns: a 100px wide column on the left, a flexible column in the center, and a 50px wide column on the right.
+  - The container has a fixed height of 120px and will hide any overflowing content.
+  - The margin is set to 5px around the container.
+*/
+
+.episode-container {
+  /* Set the container width to 100% of its parent element */
+  width: 100%;
+
+  /* Use CSS Grid for layout */
+  display: grid;
+
+  /* Define three columns for the grid */
+  grid-template-columns: 100px 1fr 50px;
+
+  /* Add margin around the container */
+  margin: 5px;
+
+  /* Hide any overflowing content */
+  overflow: hidden;
+
+  /* Set a fixed height for the container */
+  height: 120px;
+}
+
+/* 
+  Episode Body Documentation:
+  - The .episode-body class represents the body content of an episode.
+  - It uses Flexbox to arrange its children elements in a column with space between them.
+  - The left padding is set to 5px to create some spacing between the content and the left edge.
+*/
+
+.episode-body {
+  /* Use Flexbox for layout */
+  display: flex;
+
+  /* Arrange children elements in a column with space between them */
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Add left padding to create spacing */
+  padding-left: 5px;
+}
+
+/* 
+  Image Documentation:
+  - The 'img' tag represents an image element within the episode container.
+  - The image will have a fixed width of 75px and a fixed height of 105px.
+  - A border-radius of 3% will be applied to create a slightly rounded appearance.
+*/
+
+img {
+  /* Set the width of the image */
+  width: 75px;
+
+  /* Set the height of the image */
+  height: 105px;
+
+  /* Apply a border-radius of 3% to create a slightly rounded appearance */
+  border-radius: 3%;
+}
