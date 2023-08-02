@@ -45,7 +45,7 @@ export const episodeFormatter = (episodes: Array<any>): Episode[] => {
 const arrayToStringFormatter = (input: Array<string> | string): string => {
     if (Object.prototype.toString.call(input) === '[object Array]') {
         // Convert the array of strings into a pipe-separated string
-        return (input as Array<string>).map(str => stringToUpperCase(str)).join("|");
+        return (input as Array<string>).map(str => capitalizeFirstLetter(str)).join("|");
     } else {
         // Return the original string as it is
         return input as string;
@@ -57,7 +57,7 @@ const arrayToStringFormatter = (input: Array<string> | string): string => {
  * @param {string} str - The input string.
  * @returns {string} - The input string with the first character converted to uppercase.
  */
-const stringToUpperCase = (str: string): string => {
+const capitalizeFirstLetter = (str: string): string => {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
