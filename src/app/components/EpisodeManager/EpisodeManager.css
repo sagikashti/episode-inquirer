@@ -1,20 +1,11 @@
-/* 
-  .em-container Documentation:
-  - The .em-container class represents a container element using CSS Grid for layout.
-  - It has three rows with different heights: 100px, fit-content(70px), and 1fr (flexible height).
-  - The container has padding on the right and left set to 5%.
-*/
-.em-container {
-  width: 100vw;
-}
+
 .em-body{
   /* Use CSS Grid for layout */
   display: grid;
   /* Define three rows for the grid */
   grid-template-rows: 100px fit-content(70px) 1fr;
-  width: 100%;
   max-width: 400px;
-  
+
 }
 
 /* 

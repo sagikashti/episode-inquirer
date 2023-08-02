@@ -60,7 +60,7 @@ export const EpisodeManager = () => {
 
     // Render the EpisodeManager component
     return (
-        <div className="em-container center">
+        <div className="center">
             <div className="em-body">
                 {/* Title */}
                 <div className="center">
