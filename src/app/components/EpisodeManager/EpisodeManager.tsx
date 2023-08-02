@@ -82,7 +82,6 @@ export const EpisodeManager = () => {
                             type="text"
                             value={search}
                             onChange={(e) => handleSearch(e.target.value)}
-                            className={pathName === '/search' ? "" : styles.disabled}
                         />
                         {/* Clear Button */}
                         <button
