@@ -33,7 +33,7 @@ export const EpisodesList = (props: UrlProps) => {
     // Render the content based on the loading state and the existence of episodes.
     return <>
         {/* Display a spinner while data is being fetched */}
-        {isLoading && <Spinner animation="border" variant="info" />}
+        {isLoading && <Spinner style={{ overflow: 'hidden' }} animation="border" variant="info" />}
 
         {/* Display an error message if there's an error */}
         {error && <div className={styles.warning}>{(error as TextError)?.message}</div>}
