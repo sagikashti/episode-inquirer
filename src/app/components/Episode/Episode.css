@@ -14,7 +14,7 @@
   display: grid;
 
   /* Define three columns for the grid */
-  grid-template-columns: 100px 1fr 50px;
+  grid-template-columns: 100px 1fr 30px;
 
   /* Add margin around the container */
   margin-top: 5px;

@@ -60,42 +60,43 @@ export const EpisodeManager = () => {
 
     // Render the EpisodeManager component
     return (
-        <div className={"em-container"}>
-            {/* Title */}
-            <div className="center">
-                <h1>{title}</h1>
-            </div>
+        <div className="em-container center">
+            <div className="em-body">
+                {/* Title */}
+                <div className="center">
+                    <h2>{title}</h2>
+                </div>
 
-            {/* Navigation and Search Bar */}
-            <div className="em-search">
-                <div>
-                    <div className="topnav">
-                        {/* Navigation Links */}
-                        <Link href="/" className={pathName === '/' ? "active" : ""}>All Series</Link>
-                        <Link href="/favourites" className={pathName === '/favourites' ? "active" : ""}>Favourites</Link>
+                {/* Navigation and Search Bar */}
+                <div className="em-search">
+                    <div>
+                        <div className="topnav">
+                            {/* Navigation Links */}
+                            <Link href="/" className={pathName === '/' ? "active" : ""}>All Series</Link>
+                            <Link href="/favourites" style={{ marginLeft: "10px" }} className={pathName === '/favourites' ? "active" : ""}>Favourites</Link>
+                        </div>
+                    </div>
+                    <div className="search">
+                        {/* Search Input */}
+                        <input
+                            type="text"
+                            value={search}
+                            onChange={(e) => handleSearch(e.target.value)}
+                            className={pathName === '/search' ? "" : styles.disabled}
+                        />
+                        {/* Clear Button */}
+                        <button
+                            id="clear-button"
+                            style={{ display: search !== '' ? "" : "none" }}
+                            onClick={() => setSearch('  ')}
+                        >X</button>
                     </div>
                 </div>
-                <div className="search">
-                    {/* Search Input */}
-                    <input
-                        type="text"
-                        value={search}
-                        size={5}
-                        onChange={(e) => handleSearch(e.target.value)}
-                        className={pathName === '/search' ? "" : styles.disabled}
-                    />
-                    {/* Clear Button */}
-                    <button
-                        id="clear-button"
-                        style={{ display: search !== '' ? "" : "none" }}
-                        onClick={() => setSearch('  ')}
-                    >X</button>
-                </div>
-            </div>
 
-            {/* List of Episodes */}
-            <div>
-                <EpisodesList url={url} />
+                {/* List of Episodes */}
+                <div>
+                    <EpisodesList url={url} />
+                </div>
             </div>
         </div>
     );

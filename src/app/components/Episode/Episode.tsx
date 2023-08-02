@@ -55,7 +55,7 @@ export const Episode = (props: { episode: Episode }) => {
             </div>
 
             {/* Add a heart icon, and handle its onClick event to update local storage */}
-            <div onClick={() => handleSetValue(episode)}>
+            <div className="top" onClick={() => handleSetValue(episode)}>
                 {/* Display the filled heart icon if the episode is in local storage */}
                 {value ? <AiFillHeart style={{ color: "red" }} /> : <AiOutlineHeart />}
             </div>

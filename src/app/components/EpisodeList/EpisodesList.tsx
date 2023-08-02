@@ -43,6 +43,6 @@ export const EpisodesList = (props: UrlProps) => {
             && formattedEpisodesList.map((episode: Episode, i) => <Episode key={i} episode={episode} />)}
 
         {/* Display a message if there are no results */}
-        {!isLoading && formattedEpisodesList?.length === 0 && <div style={{ marginLeft: "20px" }}>No results</div >}
+        {!isLoading && formattedEpisodesList?.length === 0 && <div>No results</div >}
     </>;
 }

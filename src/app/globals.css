@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 .center {
@@ -7,6 +9,12 @@
   align-items: center;
   justify-content: center;
 }
+.top {
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 
 .font-medium {
   font-size: 15px;

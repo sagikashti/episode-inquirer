@@ -5,11 +5,16 @@
   - The container has padding on the right and left set to 5%.
 */
 .em-container {
+  width: 100vw;
+}
+.em-body{
   /* Use CSS Grid for layout */
   display: grid;
-  width: 100vw;
   /* Define three rows for the grid */
   grid-template-rows: 100px fit-content(70px) 1fr;
+  width: 100%;
+  max-width: 400px;
+  
 }
 
 /* 
@@ -36,6 +41,7 @@
 input {
   /* Remove the default border for the input field */
   border: 0;
+  width: 11vw;
 }
 
 /* 
@@ -68,9 +74,9 @@ input:focus {
 .search {
   /* Display the element as an inline-block */
   display: inline-block;
-  margin-right: 26px;
   /* Add a border with a light gray color */
   border: 1px solid #b4b4b4;
+  white-space: nowrap;
 }
 
 /* 
@@ -98,9 +104,6 @@ input:focus {
   /* Set the font size and weight for the links */
   font-size: 18px;
   font-weight: 500;
-
-  /* Add margin on the left to create space between links */
-  margin-left: 20px;
 
   /* Remove the underline from the links */
   text-decoration: none;
